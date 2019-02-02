@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .mat-button{
+      background-color:palevioletred 
+  }
+  #left{
+    margin-left: 10px
+  }
+  .formstyle{
+    margin-left: 300px;
+  }
+  mat-card{
+    width: 25%
+  }
+ .span{
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .special{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(72, 119, 221);
+    
+  }
+  .mat-select{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(218, 201, 53);
+    width: 20px;
+  }
+  .example-card {
+    width: 600px;
+    max-width: 700px;
+  }
+  
+  .example-header-image {
+    /* background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg'); */
+    background-size: cover;
+    max-width: 50%;
+  }
+  

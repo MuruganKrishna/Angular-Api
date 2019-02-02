@@ -1,0 +1,102 @@
+/////////////////////////////////////////////////
+<form>
+    <h4>mat-select</h4>
+    <mat-form-field>
+      <mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">
+        <mat-option *ngFor="let food of arrayvalue" [value]="food.value">
+          {{food.value}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p> Selected food: {{selectedValue}} </p>
+    <h4>native html select</h4>
+    <mat-form-field>
+      <select matNativeControl placeholder="Favorite car" [(ngModel)]="selectedCar" name="car">
+        <option value="" selected></option>
+        <option *ngFor="let car of cars" [value]="car.value">
+          {{car.viewValue}}
+        </option>
+      </select>
+    </mat-form-field>
+    <p> Selected car: {{selectedCar}} </p>
+  </form>
+  ////////////////////////////////////////
+    <!-- <input  [(ngmodel)]="inputarray[0]"> -->
+<!-- <p>
+  <mat-form-field appearance="outline">
+    <mat-label>Id</mat-label>
+    <input matInput placeholder="Placeholder" [(ngModel)]="inputarray[0]">
+  </mat-form-field>
+   <button mat-button>Click me!</button> 
+</p> -->
+<div >
+
+</div>
+<div class="formstyle">
+<p>
+    <span class="span">
+        The highest paid employee <span class="special" > {{employeename}}</span></span>
+  <!-- <button mat-button>Click me!</button> -->
+</p>
+<p>
+    <span class="span">
+       Company Average Salary <span class="special" > {{averagesalary}}</span></span>
+  <!-- <button mat-button>Click me!</button> -->
+</p>
+<p>
+    <span class="span">
+        Per Employee Head cost<span class="special" > {{percost}}</span></span>
+  <!-- <button mat-button>Click me!</button> -->
+</p>
+<p>
+    <span class="span">The total payout to user</span>
+  <mat-form-field appearance="outline">
+    <mat-label>Enter the user</mat-label>
+    <input matInput placeholder="Placeholder" [(ngModel)]="message">
+  </mat-form-field>
+  <button id="left" mat-button (click)="submit1()" >Click</button>
+  <span class="special span" > {{payout}}</span>
+  <!-- <button mat-button >Click All!</button> -->
+</p>
+<p> <span class="span">The salary of user</span>
+    <!-- <mat-form-field appearance="outline">
+      <mat-label>Enter the user</mat-label>
+      <input matInput placeholder="Placeholder" [(ngModel)]="count">
+    </mat-form-field>
+    <button id="left" mat-button (click)="submit()" >Click</button> -->
+    <span class="mat-select">
+    <mat-select style="width: 200px" placeholder="Employeee Id" [(ngModel)]="count" name="food">
+        
+      <mat-option *ngFor="let food of arrayvalue"  (click)="submit()" [value]="food.value">
+          {{food.key}}
+        </mat-option>
+      </mat-select>
+    </span>
+    
+  </p><span class="special span" > {{salary}}</span>
+  </div>
+
+<!-- <button mat-button (click)="submit()">submit!</button> -->
+  <!-- <div *ngFor="let input of input1">
+  <p>{{input.title}}</p>
+</div> -->
+
+<!-- <p>{{salary}}</p> -->
+
+<!-- <div *ngFor="let user of user$" style="text-align:center">
+  <h1>
+    Welcome to {{ user.title }}!
+    <h2>Here are some links to help you start: {{user.content}}</h2>
+    <h2>Here are some links to help you start: {{user.id}}</h2>
+    <h2>Here are some links to help you start: {{user.slud}}</h2>
+  </h1>
+</div> -->
+<!-- <mat-select placeholder="Employeee Id" [(ngModel)]="count" name="food">
+    <mat-option *ngFor="let food of arrayvalue"  (click)="submit()" [value]="food.value">
+      {{food.value}}
+    </mat-option>
+  </mat-select> -->
+
+
+
+<router-outlet></router-outlet>
