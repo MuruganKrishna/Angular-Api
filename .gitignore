@@ -38,8 +38,8 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-/package-lock.json
-/package.json
+package-lock.json
+package.json
 # System Files
 .DS_Store
 Thumbs.db
